@@ -5,6 +5,8 @@ import 'package:go_router/go_router.dart';
 
 import 'screens/home/home_screen.dart';
 import 'screens/interview/interview_screen.dart';
+import 'screens/mypage/mypage_screen.dart';
+import 'screens/search/search_screen.dart';
 
 class AppRouter {
   static final GoRouter _router = GoRouter(
@@ -27,9 +29,27 @@ class AppRouter {
           StatefulShellBranch(
             routes: [
               GoRoute(
+                path: "/search",
+                name: "search",
+                builder: (context, state) => const SearchScreen(),
+              ),
+            ],
+          ),
+          StatefulShellBranch(
+            routes: [
+              GoRoute(
                 path: "/interview",
                 name: "interview",
                 builder: (context, state) => const InterviewScreen(),
+              ),
+            ],
+          ),
+          StatefulShellBranch(
+            routes: [
+              GoRoute(
+                path: "/mypage",
+                name: "mypage",
+                builder: (context, state) => const MyPageScreen(),
               ),
             ],
           ),

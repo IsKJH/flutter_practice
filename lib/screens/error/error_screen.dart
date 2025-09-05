@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class ErrorScreen extends StatefulWidget {
   const ErrorScreen({super.key});
@@ -14,7 +15,14 @@ class _ErrorScreenState extends State<ErrorScreen> {
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: [Text("에러페이지")],
+          children: [
+            Text("에러페이지"),
+            TextButton(
+                onPressed: () {
+                  context.go("/");
+                },
+                child: Text("홈으로 이동"))
+          ],
         ),
       ),
     );
