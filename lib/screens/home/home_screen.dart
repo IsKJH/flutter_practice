@@ -10,7 +10,12 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   bool _isExpanded = false;
   int _curruentBottomSheetMenuIndex = 0;
-  List<String> _bottomSheetMenu = ["Top", "Quiz", "Categories", "Friends"];
+  final List<String> _bottomSheetMenu = [
+    "Top",
+    "Quiz",
+    "Categories",
+    "Friends"
+  ];
 
   IconData getWeatherIcon(String weatherCondition) {
     switch (weatherCondition.toLowerCase()) {
