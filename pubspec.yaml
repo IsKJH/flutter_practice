@@ -16,6 +16,9 @@ dependencies:
   go_router: ^16.1.0
   animated_bottom_navigation_bar: ^1.4.0
   flutter_native_splash: ^2.4.4
+  shared_preferences: ^2.5.3
+  dio: ^5.9.0
+  kakao_flutter_sdk: ^1.9.7+3
 
 dev_dependencies:
   flutter_test:
@@ -31,7 +34,7 @@ flutter:
 
 flutter_native_splash:
   color: "#FFFFFF"
-  image: assets/images/job_spoon_logo_padded.png
+  image: assets/images/logo_padded.png
 
   android: true
   ios: true
@@ -41,7 +44,7 @@ flutter_native_splash:
   android_gravity: center
 
   android_12:
-    image: assets/images/job_spoon_logo_padded.png
+    image: assets/images/logo_padded.png
     color: "#FFFFFF"
     icon_background_color: "#FFFFFF"
 
